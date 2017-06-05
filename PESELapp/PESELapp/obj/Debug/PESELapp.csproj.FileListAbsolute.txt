@@ -1,0 +1,14 @@
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\bin\Debug\PESELapp.exe.config
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\bin\Debug\PESELapp.exe
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\bin\Debug\PESELapp.pdb
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\MainWindow.g.cs
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\App.g.cs
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp_MarkupCompile.cache
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp_MarkupCompile.lref
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\MainWindow.baml
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp.g.resources
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp.Properties.Resources.resources
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp.csproj.GenerateResource.Cache
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp.exe
+C:\Users\Piotr\Documents\GitHub\Pesel\pesel_app\PESELapp\PESELapp\obj\Debug\PESELapp.pdb
