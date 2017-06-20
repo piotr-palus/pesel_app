@@ -20,9 +20,35 @@ namespace PESELapp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Pesel pesel;
         public MainWindow()
         {
             InitializeComponent();
+            this.pesel = new Pesel();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.PutInfo("30","11","2017","Male");
+            this.pesel.setPesel("30103020912");
+        }
+
+        private void PutInfo(string day, string month, string year, string sex)
+        {
+            this.PutDateInfo(day, month, year);
+            this.PutSexInfo(sex);
+        }
+
+        private void PutDateInfo(string day, string month, string year)
+        {
+            this.dayValue.Text = day;
+            this.monthValue.Text = month;
+            this.yearValue.Text = year;
+        }
+
+        private void PutSexInfo(string sex)
+        {
+            this.sexValue.Text = sex;
         }
     }
 }

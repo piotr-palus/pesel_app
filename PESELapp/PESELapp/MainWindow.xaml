@@ -6,8 +6,20 @@
         xmlns:local="clr-namespace:PESELapp"
         Icon="icon.ico"
         mc:Ignorable="d"
-        Title="PESELapp" Height="350" Width="525">
+        Title="PESELapp" 
+        Height="350" 
+        Width="525">
     <Grid>
-        
+        <Button x:Name="getInfo" Content="Get info" HorizontalAlignment="Left" Width="75" Margin="217,98,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <TextBox x:Name="peselInput" HorizontalAlignment="Left" Height="22" Margin="134,46,0,0" TextWrapping="Wrap" Text="PESEL" VerticalAlignment="Top" Width="243" ToolTip="Type your PESEL"/>
+        <TextBlock x:Name="dayText" HorizontalAlignment="Left" Margin="176,146,0,0" TextWrapping="Wrap" Text="Day:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <TextBlock x:Name="monthText" HorizontalAlignment="Left" Margin="174,184,0,0" TextWrapping="Wrap" Text="Month:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <TextBlock x:Name="yearText" HorizontalAlignment="Left" Margin="176,221,0,0" TextWrapping="Wrap" Text="Year" VerticalAlignment="Top" RenderTransformOrigin="-1.21,-0.542" FontSize="22" FontWeight="Bold"/>
+        <TextBlock x:Name="dayValue" HorizontalAlignment="Left" Margin="276,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="monthValue" HorizontalAlignment="Left" Margin="276,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="yearValue" HorizontalAlignment="Left" Margin="276,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="sexText" HorizontalAlignment="Left" Margin="176,256,0,0" TextWrapping="Wrap" Text="Sex:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <TextBlock x:Name="sexValue" HorizontalAlignment="Left" Margin="276,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+
     </Grid>
 </Window>
