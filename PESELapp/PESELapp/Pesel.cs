@@ -22,18 +22,28 @@ namespace PESELapp
 
         }
 
-        public bool setPesel(string number)
+        public bool SetPeselWithVerification(string number)
         {
             if (this.IsPeselValid(number))
             {
                 this.peselNumber = number;
-                this.dayPart = setDayPart(number);
-                this.monthPart = setMonthPart(number);
-                this.sexNumber = setSexNumber(number);
+                this.dayPart = this.setDayPart(number);
+                this.monthPart = this.setMonthPart(number);
+                this.yearPart = this.setYearPart(number);
+                this.sexNumber = this.setSexNumber(number);
                 return true;
             }
             else return false;
 
+        }
+
+        public void SetPeselWithoutVerification(string number)
+        {
+            this.peselNumber = number;
+            this.dayPart = setDayPart(number);
+            this.monthPart = setMonthPart(number);
+            this.yearPart = this.setYearPart(number);
+            this.sexNumber = setSexNumber(number);
         }
 
         public bool IsPeselValid(string number)
@@ -58,7 +68,7 @@ namespace PESELapp
                     controlNum = 0;
                 }
                 int lastDigit = int.Parse(number[number.Length - 1].ToString());
-                result = controlNum == lastDigit;
+                result = lastDigit == controlNum;
             }
             return result;
 
@@ -77,7 +87,15 @@ namespace PESELapp
         private bool isDayAndMonthValid(string number)
         {
             int day = int.Parse(number[4].ToString() + number[5].ToString());
-            int month = (int.Parse(number[2].ToString() + number[3].ToString())) - 20;
+            int month;
+            if (this.isSecondMillenium(number))
+            {
+                month = (int.Parse(number[2].ToString() + number[3].ToString())) - 20;
+            }
+            else
+                month = int.Parse(number[2].ToString() + number[3].ToString());
+
+
 
             if (this.isDayValid(day) && this.isMonthValid(month))
             {
@@ -134,7 +152,7 @@ namespace PESELapp
 
         public string GetMonthInfo()
         {
-            if (this.isSecondMillenium())
+            if (this.isSecondMillenium(this.peselNumber))
             {
                 int month = int.Parse(this.monthPart);
                 return (month - 20).ToString();
@@ -145,7 +163,7 @@ namespace PESELapp
 
         public string GetYearInfo()
         {
-            if (this.isSecondMillenium())
+            if (this.isSecondMillenium(this.peselNumber))
                 return "20" + this.yearPart.ToString();
             else return "19" + this.yearPart.ToString();
         }
@@ -158,11 +176,12 @@ namespace PESELapp
                 return "Male";
         }
 
-        private bool isSecondMillenium()
+        private bool isSecondMillenium(string number)
         {
-            if (this.monthPart[0].ToString() == "2" || this.monthPart[0].ToString() == "3")
+            if (number[2].ToString() == "2" || number[2].ToString() == "3")
                 return true;
-            else return false;
+            else
+                return false;
         }
     }
 }

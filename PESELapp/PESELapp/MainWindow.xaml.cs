@@ -29,8 +29,13 @@ namespace PESELapp
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.PutInfo("30","11","2017","Male");
-            this.pesel.setPesel("30103020912");
+            if (this.pesel.IsPeselValid(this.peselInput.Text))
+            {
+                this.pesel.SetPeselWithoutVerification(this.peselInput.Text);
+                this.PutInfo(this.pesel.GetDayInfo(), this.pesel.GetMonthInfo(), this.pesel.GetYearInfo(), this.pesel.GetSexInfo());
+            }
+            else MessageBox.Show("Invalid PESEL");           
+
         }
 
         private void PutInfo(string day, string month, string year, string sex)
