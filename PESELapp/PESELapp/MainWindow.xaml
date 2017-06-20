@@ -10,7 +10,7 @@
         Height="350" 
         Width="525">
     <Grid>
-        <Button x:Name="getInfo" Content="Get info" HorizontalAlignment="Left" Width="75" Margin="217,98,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="getInfo" Content="Get info" HorizontalAlignment="Left" Width="75" Margin="217,98,0,0" VerticalAlignment="Top" Click="button_Click" IsDefault="True"/>
         <TextBox x:Name="peselInput" HorizontalAlignment="Left" Height="22" Margin="134,46,0,0" TextWrapping="Wrap" Text="PESEL" VerticalAlignment="Top" Width="243" ToolTip="Type your PESEL"/>
         <TextBlock x:Name="dayText" HorizontalAlignment="Left" Margin="176,146,0,0" TextWrapping="Wrap" Text="Day:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
         <TextBlock x:Name="monthText" HorizontalAlignment="Left" Margin="174,184,0,0" TextWrapping="Wrap" Text="Month:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
